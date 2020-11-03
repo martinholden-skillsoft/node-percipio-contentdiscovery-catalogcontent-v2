@@ -1,6 +1,6 @@
 {
   "name": "node-percipio-contentdiscovery-catalogcontent-v2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Call Percipio Content Discovery Service API using Axios. Function: /v2/organizations/{orgId}/catalog-content",
   "repository": {
     "type": "git",
