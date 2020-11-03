@@ -1,0 +1,49 @@
+{
+  "name": "node-percipio-contentdiscovery-catalogcontent-v2",
+  "version": "0.0.0",
+  "description": "Call Percipio Content Discovery Service API using Axios. Function: /v2/organizations/{orgId}/catalog-content",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/martinholden-skillsoft/node-percipio-contentdiscovery-catalogcontent-v2.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js",
+    "lint": "eslint **/*.js",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags && npm run changelog && git push ",
+    "postinstall": "",
+    "changelog": "rimraf CHANGELOG.md && auto-changelog --template keepachangelog && git add . && git commit . -m changelog && git push"
+  },
+  "keywords": [
+    "skillsoft",
+    "percipio"
+  ],
+  "author": "martinholden-skillsoft &lt;12408585+martinholden-skillsoft@users.noreply.github.com&gt;",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "config": "^3.3.2",
+    "dlv": "^1.1.3",
+    "dotenv-safe": "^8.2.0",
+    "json-stringify-safe": "^5.0.1",
+    "lodash": "^4.17.20",
+    "mkdirp": "^1.0.4",
+    "moment": "^2.29.0",
+    "pkginfo": "^0.4.1",
+    "promise-retry": "^2.0.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.2.1",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
+  }
+}
